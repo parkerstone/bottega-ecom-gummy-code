@@ -1,6 +1,11 @@
 .purchase-history {
-  grid-row: content-s/content-e;
-  grid-column: s/e;
+  &__content {
+    margin: 37px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+  }
   &__page-title {
     border-bottom: 1px solid #CCC;
   }
@@ -11,7 +16,10 @@
 }
 
 .purchases {
-
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, 80px);
+  width: 360px;
 }
 
 .purchase-detail {
