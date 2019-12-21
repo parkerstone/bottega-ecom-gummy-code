@@ -13,7 +13,7 @@ class SignUp extends Component {
     return (
       <div className='sign-up'>
         <PageTitle className='sign-up__page-title' title='Register' />
-        <SignUpForm onSubmit={this.onSubmit} className='sign-in__form' />
+        <SignUpForm onSubmit={this.onSubmit} className='sign-up__form' />
       </div>
     )
   }
