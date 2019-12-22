@@ -18,6 +18,14 @@ class Shop extends Component {
     // filter products with links
     this.props.fetchShopProducts();
   }
+
+  shouldComponentUpdate(nextProps) {
+    if(this.props != nextProps) {
+      this.props.setNavbarLinks(nextProps.categories, (_id) => this.props.filterProductsWithCategoryId(_id));
+    }
+    return true;
+  }
+
   render() {
     return (
       <div className='shop'>
@@ -28,8 +36,9 @@ class Shop extends Component {
 }
 
 function mapStateToProps(state) {
+  const { categories } = state.shop;
   return {
-    ...state
+    categories
   }
 }
 
