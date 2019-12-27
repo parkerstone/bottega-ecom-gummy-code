@@ -66,49 +66,56 @@ export function fetchShopProducts() {
         title: 'JavaScript in the Browser',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, repellat ex sequi aliquid voluptatem voluptatibus dolores praesentium, nobis obcaecati nemo sint. Illum, provident! Repudiandae tempora, sed est iure cumque quibusdam.',
         price: 1.99,
-        belongsTo: [0, 1]
+        belongsTo: [0, 1],
+        imageUrl: 'http://via.placeholder.com/80x80'
       },
       {
         _id: 1,
         title: 'Graph Database',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, repellat ex sequi aliquid voluptatem voluptatibus dolores praesentium, nobis obcaecati nemo sint. Illum, provident! Repudiandae tempora, sed est iure cumque quibusdam.',
         price: 1.99,
-        belongsTo: [0, 6]
+        belongsTo: [0, 6],
+        imageUrl: 'http://via.placeholder.com/80x80'
       },
       {
         _id: 2,
         title: 'Full Stack Development',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, repellat ex sequi aliquid voluptatem voluptatibus dolores praesentium, nobis obcaecati nemo sint. Illum, provident! Repudiandae tempora, sed est iure cumque quibusdam.',
         price: 1.99,
-        belongsTo: [0, 1, 4]
+        belongsTo: [0, 1, 4],
+        imageUrl: 'http://via.placeholder.com/80x80'
       },
       {
         _id: 3,
         title: 'User Interface Design',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, repellat ex sequi aliquid voluptatem voluptatibus dolores praesentium, nobis obcaecati nemo sint. Illum, provident! Repudiandae tempora, sed est iure cumque quibusdam.',
         price: 1.99,
-        belongsTo: [0, 2]
+        belongsTo: [0, 2],
+          imageUrl: 'http://via.placeholder.com/80x80'
       },
       {
         _id: 4,
         title: 'JavaScript Development',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, repellat ex sequi aliquid voluptatem voluptatibus dolores praesentium, nobis obcaecati nemo sint. Illum, provident! Repudiandae tempora, sed est iure cumque quibusdam.',
         price: 1.99,
-        belongsTo: [0, 1]
+        belongsTo: [0, 1],
+          imageUrl: 'http://via.placeholder.com/80x80'
       },
       {
         _id: 5,
         title: 'User Experience Design',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, repellat ex sequi aliquid voluptatem voluptatibus dolores praesentium, nobis obcaecati nemo sint. Illum, provident! Repudiandae tempora, sed est iure cumque quibusdam.',
         price: 1.99,
-        belongsTo: [0, 2]
+        belongsTo: [0, 2],
+          imageUrl: 'http://via.placeholder.com/80x80'
       },
       {
         _id: 6,
         title: 'Advanced OOP',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, repellat ex sequi aliquid voluptatem voluptatibus dolores praesentium, nobis obcaecati nemo sint. Illum, provident! Repudiandae tempora, sed est iure cumque quibusdam.',
         price: 1.99,
-        belongsTo: [0, 6]
+        belongsTo: [0, 6],
+          imageUrl: 'http://via.placeholder.com/80x80'
       },
     ]
   })
