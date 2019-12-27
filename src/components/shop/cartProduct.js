@@ -8,7 +8,7 @@ class CartProduct extends Component {
     const { title, price } = product;
     return (
       <div className={`${className} cart-product`}>
-        <img src="http://via.placeholder.com/130x130" className="cart-product__img"/>
+        <img src="http://via.placeholder.com/130x130" className="cart-product__image"/>
         <div className="cart-product__title">{title}</div>
         <Quantity className='cart-product__quantity' quantity={quantity} />
         <a className="cart-product__remove">Remove</a>
