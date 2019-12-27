@@ -1,12 +1,41 @@
 import {
   SET_USER_PURCHASES,
-  SET_PURCHASE_DETAIL
+  SET_PURCHASE_DETAIL,
+  SET_CART_PRODUCTS
 } from './types';
 
 export function setPurchaseDetail(_id) {
   return ({
     type: SET_PURCHASE_DETAIL,
     payload: _id
+  })
+}
+
+export function fetchCartProducts() {
+  return ({
+    type: SET_CART_PRODUCTS,
+    payload: [
+      {
+        product: {
+          _id: 0,
+          title: 'JavaScript in the Browser',
+          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, repellat ex sequi aliquid voluptatem voluptatibus dolores praesentium, nobis obcaecati nemo sint. Illum, provident! Repudiandae tempora, sed est iure cumque quibusdam.',
+          price: 1.99,
+          belongsTo: [0, 1]
+        },
+        quantity: 2
+      },
+      {
+        product: {
+          _id: 1,
+          title: 'Graph Database',
+          description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, repellat ex sequi aliquid voluptatem voluptatibus dolores praesentium, nobis obcaecati nemo sint. Illum, provident! Repudiandae tempora, sed est iure cumque quibusdam.',
+          price: 1.99,
+          belongsTo: [0, 6]
+        },
+        quantity: 1
+      }
+    ]
   })
 }
 
