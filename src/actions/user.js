@@ -16,6 +16,7 @@ export function fetchCartProducts() {
     type: SET_CART_PRODUCTS,
     payload: [
       {
+        _id: 0,
         product: {
           _id: 0,
           title: 'JavaScript in the Browser',
@@ -26,6 +27,7 @@ export function fetchCartProducts() {
         quantity: 2
       },
       {
+        _id: 1,
         product: {
           _id: 1,
           title: 'Graph Database',
