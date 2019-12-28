@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import SignInForm from './signinForm'
-import PageTitle from '../pageTitle'
+import SignInForm from './signinForm';
+import PageTitle from '../pageTitle';
 
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
 class SignIn extends Component {
